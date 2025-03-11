@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="WebPage.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="Index.html">Inicio</a></li>
+          <li><a href="Personajes.html">Personajes</a></li>
+          <li><a href="Contacto.html">Contacto</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <img width="25%" src="./img/Rick_y_Morty_Logo.png" alt="Imagen del logo de Rick y Morty">
+
+    <div class="search-container">
+      <img src="./img/portal_gun.png" alt="Buscar" class="search-icon" />
+      <input type="text" id="buscador" placeholder="Buscar personaje..." />
+    </div>
+    <div class="filters">
+        <select id="gender-filter">
+            <option value="">Todos los géneros</option>
+            <option value="Male">Masculino</option>
+            <option value="Female">Femenino</option>
+            <option value="Genderless">Sin género</option>
+            <option value="unknown">Desconocido</option>
+        </select>
+    
+        <select id="status-filter">
+            <option value="">Todos los estados</option>
+            <option value="Alive">Vivo</option>
+            <option value="Dead">Muerto</option>
+            <option value="unknown">Desconocido</option>
+        </select>
+    </div>
+
+    <main></main>
+
+    <script src="WebPage.js"></script>
+  </body>
+</html>

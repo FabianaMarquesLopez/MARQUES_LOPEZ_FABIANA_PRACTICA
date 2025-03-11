@@ -1,0 +1,228 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+body{
+    background-color: #28c265;
+    text-align: center;
+}
+
+h1 {
+    text-align: left;
+    margin: 20px 0;
+    color: rgb(0, 0, 0);
+    display: inline;
+    box-shadow: inset 0 -10px 0 #73e95b;  
+}
+
+main {
+    width: 90%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    align-items: start;
+}
+
+article {
+    background: #f8f8f8;
+    padding: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    text-align: center;
+    overflow: hidden;
+    transition: transform 0.3s, width 0.3s;
+    max-width: 300px; 
+    margin: auto;
+}
+
+article:hover{
+    transform: scale(1.05);
+}
+
+.container {
+    background: #f8f8f8;  /* Mismo fondo que las tarjetas */
+    padding: 30px 80px 30px 80px; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra igual a las tarjetas */
+    border-radius: 10px; /* Bordes redondeados */
+    text-align: left;
+    max-width: 1400px; /* Para que no sea demasiado grande */
+    margin: auto; /* Para centrar */
+}
+
+.img-container {
+    display: flex;
+    justify-content: center;
+}
+
+.img-container img {
+    width: 100%;
+    max-width: 250px;
+    border-radius: 10px; 
+}
+
+h2 {
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+span {
+    display: block;
+    font-weight: bold;
+    color: #555;
+    margin-top: 5px;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    background-color: #171717;
+    z-index: 1000;
+    padding: 15px 0;
+    width: 100%;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    padding: 10px 15px;
+    transition: 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: #28c265;
+    border-radius: 5px;
+}
+
+section {
+    padding: 40px;
+    color: black;
+    background-color: #ededed;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra igual a las tarjetas */
+    border-radius: 10px; /* Bordes redondeados */
+}
+
+.search-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px auto;
+    width: 100%;
+    max-width: 400px;
+}
+
+.search-icon {
+    position: absolute;
+    left: 15px; 
+    width: 25px;
+    height: 25px;
+    pointer-events: none;
+}
+
+#buscador {
+    width: 100%; 
+    padding: 10px 15px 10px 45px; 
+    border: 2px solid #ffffff;
+    border-radius: 25px;
+    font-size: 16px;
+    outline: none;
+    transition: all 0.3s ease-in-out;
+    text-align: left;
+}
+
+#buscador:focus {
+    border-color: #28c265;
+    box-shadow: 0 0 8px rgba(40, 194, 101, 0.6);
+}
+
+#buscador::placeholder {
+    color: #999;
+    font-style: italic;
+}
+
+.filters {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin: 20px auto;
+}
+
+.filters select {
+    padding: 10px;
+    border-radius: 25px;
+    border: 2px solid #28c265;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.sidebar {
+    position: fixed;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    width: 200px;
+    background: #171717;
+    padding: 15px;
+    border-radius: 10px 0 0 10px; /* Bordes redondeados solo en la izquierda */
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.2);
+    text-align: left;
+    transition: right 0.3s ease-in-out;
+}
+
+.sidebar h3 {
+    color: white;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    margin: 10px 0;
+}
+
+.sidebar ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    display: block;
+    padding: 8px;
+    transition: background 0.3s;
+    border-radius: 5px;
+}
+
+.sidebar ul li a:hover {
+    background: #28c265;
+}
+
+hr {
+    border: none;
+    height: 2px; /* Grosor de la línea */
+    background: repeating-linear-gradient(
+        to right,
+        black 0px,
+        black 2px,
+        transparent 1px,
+        transparent 10px
+    );
+}
+
